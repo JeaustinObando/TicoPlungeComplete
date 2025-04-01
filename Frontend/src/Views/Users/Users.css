@@ -1,0 +1,63 @@
+.Users-Style {
+  background: var(--background-color-principal);
+  background-attachment: fixed;
+
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0;
+  min-height: calc(100vh - 44px);
+  text-align: center;
+}
+
+.Users-Style select {
+  padding: 10px;
+  background: var(--background-color-form);
+  color: var(--color-letter-form);
+  border-radius: 10px;
+}
+
+.Users-Style option {
+  color: white;
+  background-color: rgb(36, 35, 34);
+}
+
+.Users-Style input {
+  background: transparent;
+  color: white;
+  border: 3px solid #0b5ed6;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 800px;
+  width: 80%;
+}
+
+.Users-Style table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Users-Style th,
+.Users-Style td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.Users-Style th {
+  background: var(--background-color-form);
+  color: var(--color-letter-form);
+}
+
+.Users-Style td {
+  background-color: transparent;
+  color: white;
+}
+
+/* Container for users and forms */
+.Users-container {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  padding: 0 50px 0 50px;
+}

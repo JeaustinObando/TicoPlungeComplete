@@ -1,0 +1,98 @@
+.AppointmentStyle {
+  padding: 30px;
+  margin: 0;
+  min-height: calc(100vh - 44px);
+  width: 100%;
+  background: var(--background-color-principal);
+  background-attachment: fixed;
+}
+.AppointmentStyle h1 {
+  margin-top: 20px;
+  color: #0b5ed6;
+}
+
+.AppointmentStyle input {
+  border: 3px solid #0b5ed6;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+}
+
+.AppointmentStyle select {
+  border: 3px solid #0b5ed6;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+}
+
+.AppointmentStyle option {
+  border-radius: 10px;
+  background-color: black;
+}
+/* ---------------------------------------
+--  Estilo de como mostrar las citas
+------------------------------------------ */
+
+.Appointment-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Appointment-card {
+  background: var(--background-color-form);
+  color: var(--color-letter-form);
+
+  box-sizing: border-box;
+  min-height: 320px;
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  align-items: center;
+  width: calc(33.333% - 20px);
+  margin-bottom: 20px;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ajusta la distribución de los elementos */
+  display: block;
+  flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+}
+
+.Appointment-card p {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+p.stylePActivity {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.Appointment-card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.Appointment-no-data {
+  text-align: center;
+  width: 100%;
+}
+
+/* ---------------------------------------
+--  Estilo para form de buscar
+------------------------------------------ */
+
+/* Media Query para reducir el tamaño de los elementos cuando la pantalla es más pequeña */
+@media screen and (max-width: 600px) {
+  .Appointment-card {
+    width: 100%;
+    margin: 15px;
+  }
+}

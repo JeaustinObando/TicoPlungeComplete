@@ -1,0 +1,24 @@
+.request-style{
+  background: var(--background-color-principal);
+  background-attachment: fixed;
+  color: white;
+  padding: 30px;
+  margin: 0;
+  min-height: calc(100vh - 44px);
+}
+
+.request table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.request th,
+.request td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.request th {
+  background: var(--background-color-form);
+  color: var(--color-letter-form);
+}

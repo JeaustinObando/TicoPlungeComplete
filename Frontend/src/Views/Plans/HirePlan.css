@@ -1,0 +1,77 @@
+.hirePlanStyle{
+    background: var(--background-color-principal);
+    background-attachment: fixed;
+    color: white;
+    padding: 30px;
+    margin: 0;
+    min-height: calc(100vh - 44px);
+  }
+
+  .card-container-general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .card-general {
+    background: var(--background-color-form);
+    color: var(--color-letter-form);
+    box-sizing: border-box;
+    min-height: 320px;
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid rgb(48, 128, 148);
+    border-radius: 0.90rem;
+    box-shadow: blue;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+  }
+  
+  .card-title-general { 
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    margin-bottom: 0.5rem; 
+  }
+  
+  .card-subtitle-general {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+  
+  .card-divider-general { 
+    width: 80%; 
+    height: 1px;
+    background-color: rgba(156, 163, 175, 1);
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-list-general {
+    text-align: center; 
+    width: 100%;
+    font-size: medium;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .card-general:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+
+  /* Media Query para reducir el tamaño de los elementos cuando la pantalla es más pequeña */
+@media screen and (max-width: 600px) {
+    .card-general {
+      width: 100%;
+      margin: 15px;
+    }
+  }

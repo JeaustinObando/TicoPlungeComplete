@@ -1,0 +1,231 @@
+.createServiceStyle-service {
+  margin: 0;
+  min-height: calc(100vh - 44px);
+
+  background: var(--background-color-principal);
+  background-attachment: fixed;
+  padding-top: 30px;
+  color: white;
+}
+
+.card-container-service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card-service {
+  background: var(--background-color-form);
+  color: var(--color-letter-form);
+  box-sizing: border-box;
+  height: 200px;
+  width: calc(33.333% - 20px);
+  margin-bottom: 20px;
+  padding: 1rem;
+  border: 1px solid rgb(48, 128, 148);
+  border-radius: 0.9rem;
+  box-shadow: blue;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.card-title-service {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-subtitle-service {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.card-divider-service {
+  width: 80%;
+  height: 1px;
+  background-color: rgb(175, 166, 156);
+  margin-bottom: 0.5rem;
+}
+
+.card-list-service {
+  text-align: center;
+  width: 100%;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-service:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.form-container-service {
+  background: var(--background-color-form);
+  color: var(--color-letter-form);
+  width: 320px;
+  border-radius: 0.9rem;
+  padding: 2rem;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form-container-service select {
+  background-color: rgb(48, 46, 46);
+  color: white;
+}
+
+.select-createService-service {
+  background: var(--background-color-form);
+  color: var(--color-letter-form);
+  width: 100%;
+  padding: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.select-createService-service option {
+  background: var(--background-color-form);
+  color: var(--color-letter-form);
+  align-items: center;
+}
+
+.flex-container-service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-item-service {
+  flex-grow: 1;
+}
+
+.custom-li-service {
+  list-style-type: none;
+  padding-left: 30px;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23DABE56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>');
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 20px 20px;
+}
+
+.title-service {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.form-createService-service {
+  margin-top: 1.5rem;
+}
+
+.input-group-createService-service {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+}
+
+.input-group-createService-service label {
+  display: block;
+  color: rgba(156, 163, 175, 1);
+  margin-bottom: 4px;
+}
+
+.input-group-createService-service input {
+  background: var(--background-color-form);
+  color: var(--color-letter-form);
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 1px solid rgb(81, 73, 55);
+  outline: 0;
+
+  padding: 0.75rem 1rem;
+}
+
+.input-group-createService-service input:focus {
+  border-color: rgba(167, 139, 250);
+}
+
+.button-margin-service {
+  margin-bottom: 8px;
+}
+
+.modal-footer-service {
+  display: flex;
+  justify-content: left;
+  padding: 15px;
+}
+
+.buttomCreate-service {
+  display: block;
+  width: 100%;
+  background-color: #0d6efd;
+  padding: 0.75rem;
+  text-align: center;
+  color: var(--class-color-letter-service);
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  margin-top: 15px;
+  color: white;
+}
+
+.buttomCreate-service:hover {
+  background-color: #1462d8;
+}
+
+.social-message-service {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  font-size: smaller;
+}
+
+.line-service {
+  height: 1px;
+  flex: 1 1 0%;
+  background-color: rgba(55, 65, 81, 1);
+}
+
+.social-message-service .message {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(156, 163, 175, 1);
+}
+
+.input-group-createService-service[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.input-group-createService-service[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  border-radius: 50%;
+  padding: 4px;
+}
+
+/* Media Query para reducir el tamaño de los elementos cuando la pantalla es más pequeña */
+@media screen and (max-width: 600px) {
+  .card-service {
+    width: 100%;
+    height: 400px;
+    margin: 15px;
+  }
+}

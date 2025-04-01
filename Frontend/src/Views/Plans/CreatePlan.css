@@ -1,0 +1,281 @@
+.createPlanStyle-plan {
+  background: var(--background-color-principal);
+  background-attachment: fixed;
+
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0;
+  min-height: calc(100vh - 44px);
+}
+
+:root {
+  --class-color-letter-plan: rgba(243, 244, 246, 1);
+  --class-background-color-plan: #111827;
+}
+
+.card-container-plan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card-plan {
+  box-sizing: border-box;
+  min-height: 320px;
+  width: calc(33.333% - 20px);
+  margin-bottom: 20px;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--class-background-color-plan);
+  border: 1px solid rgb(48, 128, 148);
+  border-radius: 0.9rem;
+  box-shadow: blue;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  color: var(--class-color-letter-plan);
+}
+
+.card-title-plan {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-subtitle-plan {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.card-divider-plan {
+  width: 80%;
+  height: 1px;
+  background-color: rgba(156, 163, 175, 1);
+  margin-bottom: 0.5rem;
+}
+
+.card-list-plan {
+  text-align: center;
+  width: 100%;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-plan:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.form-container-plan {
+  width: 320px;
+  border-radius: 0.9rem;
+  background-color: var(--class-background-color-plan);
+  padding: 2rem;
+  color: var(--class-color-letter-plan);
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.select-createPlan-plan {
+  width: 100%;
+  background-color: var(--class-background-color-plan);
+  color: var(--class-color-letter-plan);
+  padding: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.select-createPlan-plan option {
+  background-color: var(--class-background-color-plan);
+  align-items: center;
+}
+
+.flex-container-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-item-plan {
+  flex-grow: 1;
+}
+
+.custom-li-plan {
+  list-style-type: none;
+  padding-left: 30px;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23DABE56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>');
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 20px 20px;
+}
+
+.title-plan {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.form-createPlan-plan {
+  margin-top: 1.5rem;
+}
+
+.input-group-createPlan-plan {
+  display: flexbox;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+}
+
+.input-group-createPlan-plan label {
+  display: block;
+  color: rgb(212, 212, 212);
+  margin-bottom: 4px;
+}
+
+.input-label-createPlan {
+  display: block;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.input-group-createPlan-plan input {
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 1px solid rgb(81, 73, 55);
+  outline: 0;
+  background-color: var(--class-background-color-plan);
+  padding: 0.75rem 1rem;
+  color: var(--class-color-letter-plan);
+}
+
+.input-group-createPlan-plan input:focus {
+  border-color: rgb(123, 62, 141);
+}
+
+.button-margin-plan {
+  margin-bottom: 8px;
+}
+
+.modal-footer-plan {
+  display: flex;
+  justify-content: left;
+  padding: 15px;
+}
+
+.buttomCreate-plan {
+  display: block;
+  width: 100%;
+  background-color: #0d6efd;
+  padding: 0.75rem;
+  text-align: center;
+  color: var(--class-color-letter-plan);
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.buttomCreate-plan:hover {
+  background-color: #1462d8;
+}
+
+.social-message-plan {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  font-size: smaller;
+}
+
+.line-plan {
+  height: 1px;
+  flex: 1 1 0%;
+  background-color: rgba(55, 65, 81, 1);
+}
+
+.social-message-plan .message {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(156, 163, 175, 1);
+}
+
+.input-group-createPlan-plan[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.input-group-createPlan-plan[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.container-plan-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container-plan-checkbox input:checked ~ .checkmark-plan {
+  background-image: linear-gradient(#255cd2, #1d52c1);
+}
+
+.container-plan-checkbox input:checked ~ .checkmark-plan:after {
+  display: block;
+}
+
+.container-plan-checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 15px;
+  user-select: none;
+}
+
+.checkmark-plan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1em;
+  width: 1em;
+  background-color: #bbbbbb;
+  border-radius: 7px;
+}
+
+.checkmark-plan:after {
+  left: 0.45em;
+  top: 0.2em;
+  width: 0.24em;
+  height: 0.6em;
+  border: solid white;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Media Query para reducir el tamaño de los elementos cuando la pantalla es más pequeña */
+@media screen and (max-width: 600px) {
+  .card-plan {
+    width: 100%;
+    margin: 15px;
+  }
+}

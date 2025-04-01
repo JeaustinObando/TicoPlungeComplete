@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  min-height: calc(100vh - 44px);
+  background: var(--background-color-principal);
+  background-attachment: fixed;
+  color: white;
+}
+
+.emp-profile {
+  padding: 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+.profile-img {
+  text-align: center;
+}
+.profile-img img {
+  width: 70%;
+  height: 100%;
+}
+.profile-img .file {
+  position: relative;
+  overflow: hidden;
+  margin-top: -20%;
+  width: 70%;
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+  background: #212529b8;
+}
+.profile-img .file input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+.profile-head h5 {
+  color: #333;
+}
+.profile-head h6 {
+  color: #2464a8;
+}
+.profile-edit-btn {
+  border: none;
+  border-radius: 1.5rem;
+  width: 70%;
+  padding: 2%;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.profile-input {
+  outline: none;
+  border: none;
+  max-width: 95%; /* Ancho relativo */
+  width: 250px;
+  height: 30px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #9c9c9c27;
+  margin: 5px 0;
+  font-size: 14px;
+  text-align: center;
+}
+.profile-cancel-btn {
+  border: none;
+  border-radius: 1.5rem;
+  background-color: rgba(240, 46, 75, 0.185);
+  width: 70%;
+  padding: 2%;
+  font-weight: 600;
+  color: #7d6c6c;
+  cursor: pointer;
+}
+.proile-rating {
+  font-size: 12px;
+  color: #818182;
+  margin-top: 5%;
+}
+.proile-rating span {
+  color: #0080ff;
+  font-size: 15px;
+  font-weight: 600;
+}
+.profile-head .nav-tabs {
+  margin-bottom: 5%;
+}
+.profile-head .nav-tabs .nav-link {
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+
+.profile-head .nav-tabs .nav-link.active {
+  border: none;
+  border-bottom: 2px solid #007bff;
+}
+.profile-work {
+  padding: 14%;
+  margin-top: -15%;
+}
+.profile-work p {
+  font-size: 12px;
+  color: #818182;
+  font-weight: 600;
+  margin-top: 10%;
+}
+.profile-work a {
+  text-decoration: none;
+  color: #495057;
+  font-weight: 600;
+  font-size: 14px;
+}
+.profile-work ul {
+  list-style: none;
+}
+.profile-tab label {
+  font-weight: 600;
+}
+.profile-tab p {
+  font-weight: 600;
+  color: #0062cc;
+}
+
+.tab-pane {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan-card {
+  background: #ffffff; /* Fondo blanco para las tarjetas */
+  border: 1px solid #ccc; /* Borde ligero para definir las tarjetas */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  margin: 10px; /* Margen entre tarjetas */
+  width: 80%; /* Ancho de cada tarjeta */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
+}
+
+.plan-card h3 {
+  color: #333; /* Color del texto para el título */
+  margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.plan-card p {
+  color: #666; /* Color del texto para la fecha */
+  font-size: 14px; /* Tamaño de la fuente para la fecha */
+}
+
+.custom-li-profile {
+  list-style: none; /* Remover viñetas de la lista */
+  padding: 10px 0; /* Espaciado vertical para cada elemento de la lista */
+  padding-left: 30px; /* Espacio adicional en la izquierda para el ícono */
+  border-bottom: 1px solid #eee; /* Línea sutil entre elementos */
+  position: relative; /* Posicionamiento relativo para posicionar el ícono absolutamente dentro de este elemento */
+  display: flex;
+  align-items: center; /* Alinear el contenido verticalmente al centro */
+  min-height: 40px; /* Altura mínima para asegurar espacio para el ícono y el texto */
+}
+
+.custom-li-profile:before {
+  content: ""; /* Contenido vacío para el pseudo-elemento */
+  position: absolute; /* Posicionamiento absoluto */
+  left: 0; /* Posicionado a la izquierda del elemento */
+  top: 50%; /* Centrado verticalmente */
+  transform: translateY(-50%); /* Ajuste fino para centrar exactamente */
+  width: 20px; /* Ancho del ícono */
+  height: 20px; /* Altura del ícono */
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-right"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>');
+  background-size: contain; /* Asegurar que el ícono se contenga completamente dentro del área definida */
+  background-repeat: no-repeat; /* No repetir el ícono */
+}
